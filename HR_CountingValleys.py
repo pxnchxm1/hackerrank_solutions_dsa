@@ -30,8 +30,7 @@ def countingValleys(steps, path):
             s.append(s[-1]+1)
         else:
             s.append(s[-1]-1)
-    for i in range(1,len(s)):
-        if s[i]==0 and s[i-1]<0:count+=1
+        if s[-1]==0 and s[-2]<0 : count+=1
     return count
         
         
